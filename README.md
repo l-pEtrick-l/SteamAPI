@@ -2,7 +2,7 @@
 
 Este projeto é um **Sistema Web** que utiliza a API oficial da Steam para permitir a **análise comparativa de preços e informações de jogos**. O objetivo é fornecer ao usuário dados históricos e comparativos entre diferentes períodos, facilitando a tomada de decisões informadas na hora de comprar jogos.
 
-🔗 **Link do Projeto:** [https://portifoliosteamapi.kesug.com](https://portifoliosteamapi.kesug.com)
+🔗 **Link do Projeto:** [https://steamapi.kesug.com](https://steamapi.kesug.com)
 
 ---
 
