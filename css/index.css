@@ -36,6 +36,7 @@ body {
   );
 
   filter: blur(40px);
+    animation: starsMove 12s linear infinite;
 }
 
 @keyframes starsMove {
@@ -43,7 +44,7 @@ body {
     transform: translateY(0);
   }
   to {
-    transform: translateY(-100%);
+    transform: translateY(-200%);
   }
 }
 .space::after {
@@ -61,10 +62,10 @@ body {
     radial-gradient(white 1px, transparent 1px),
     radial-gradient(white 1px, transparent 1px);
     
-  background-size: 100px 100px, 150px 150px, 200px 200px;
+  background-size: 50px 50px, 80px 80px, 120px 120px;
   background-position: 0 0, 50px 50px, 25px 75px;
 
   opacity: 0.6;
 
-  animation: starsMove 10s linear infinite;
+   animation: starsMove 1.5s linear infinite;
 }
