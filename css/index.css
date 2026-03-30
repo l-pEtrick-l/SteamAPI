@@ -26,22 +26,21 @@ body {
 .space::before {
   content: "";
   position: absolute;
-  width: 600px;
-  height: 600px;
-  top: 30%;
-  left: 50%;
+  width: 500px;
+  height: 500px;
+  top: 35%;
+  left: 60%;
   
-  transform: translate(-50%, -50%); /* VOLTA ISSO */
+  transform: translate(-50%, -50%);
 
   background: radial-gradient(
     circle,
-    rgba(150, 80, 255, 0.4),
-    transparent 60%
+    rgba(150, 80, 255, 0.25), /* mais suave */
+    transparent 70%
   );
 
-  filter: blur(40px);
+  filter: blur(60px); /* mais difuso */
 }
-
 
 .space::after {
   content: "";
@@ -53,10 +52,10 @@ body {
 
   display: block;
 
-  background-image:
-    radial-gradient(white 1px, transparent 1px),
-    radial-gradient(white 1px, transparent 1px),
-    radial-gradient(white 1px, transparent 1px);
+background-image:
+  radial-gradient(rgba(255,255,255,0.8) 1px, transparent 1px),
+  radial-gradient(rgba(255,255,255,0.6) 1px, transparent 1px),
+  radial-gradient(rgba(255,255,255,0.4) 1px, transparent 1px);
     
   background-size: 50px 50px, 80px 80px, 120px 120px;
   background-position: 0 0, 50px 50px, 25px 75px;
@@ -64,4 +63,9 @@ body {
   opacity: 0.6;
 
   
+}
+
+.navbar {
+  position: relative;
+  z-index: 10;
 }
