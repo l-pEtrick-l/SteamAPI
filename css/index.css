@@ -4,67 +4,56 @@ body {
   background: black;
 }
 
-
-
 .space {
   width: 100%;
   height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  position: relative;
   overflow: hidden;
 
+  /* Gradiente principal */
   background: radial-gradient(
-    circle at 65% 35%,
-    rgba(120, 0, 255, 0.3),
-    rgba(10, 10, 40, 0.9) 40%,
-    #020617 80%
+      circle at 65% 35%,
+      rgba(120, 0, 255, 0.3),
+      rgba(10, 10, 40, 0.9) 40%,
+      #020617 80%
   );
 }
 
+/* brilho central tipo "feixe" */
 .space::before {
   content: "";
   position: absolute;
-  width: 500px;
-  height: 500px;
-  top: 35%;
-  left: 60%;
-  
+  width: 600px;
+  height: 600px;
+  top: 30%;
+  left: 50%;
   transform: translate(-50%, -50%);
-
+  
   background: radial-gradient(
     circle,
-    rgba(150, 80, 255, 0.25), /* mais suave */
-    transparent 70%
+    rgba(150, 80, 255, 0.4),
+    transparent 60%
   );
 
-  filter: blur(60px); /* mais difuso */
+  filter: blur(40px);
 }
 
+/* estrelas */
 .space::after {
   content: "";
   position: absolute;
-  width: 200%;
-  height: 200%;
-  top: 0;
-  left: 0;
-
-  display: block;
-
-background-image:
-  radial-gradient(rgba(255,255,255,0.8) 1px, transparent 1px),
-  radial-gradient(rgba(255,255,255,0.6) 1px, transparent 1px),
-  radial-gradient(rgba(255,255,255,0.4) 1px, transparent 1px);
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 1px, transparent 1px);
     
-  background-size: 50px 50px, 80px 80px, 120px 120px;
+  background-size: 100px 100px, 150px 150px, 200px 200px;
   background-position: 0 0, 50px 50px, 25px 75px;
 
   opacity: 0.6;
-
-  
 }
-
 .navbar {
   position: relative;
   z-index: 10;
