@@ -36,17 +36,10 @@ body {
   );
 
   filter: blur(40px);
-    animation: starsMove 12s linear infinite;
+   
 }
 
-@keyframes starsMove {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-400%);
-  }
-}
+
 .space::after {
   content: "";
   position: absolute;
@@ -67,5 +60,5 @@ body {
 
   opacity: 0.6;
 
-   animation: starsMove 0.5s linear infinite;
+  
 }
