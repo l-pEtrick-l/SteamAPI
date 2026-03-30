@@ -44,7 +44,7 @@ body {
     transform: translateY(0);
   }
   to {
-    transform: translateY(-200%);
+    transform: translateY(-400%);
   }
 }
 .space::after {
@@ -67,5 +67,5 @@ body {
 
   opacity: 0.6;
 
-   animation: starsMove 1.5s linear infinite;
+   animation: starsMove 0.5s linear infinite;
 }
