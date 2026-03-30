@@ -4,6 +4,8 @@ body {
   background: black;
 }
 
+
+
 .space {
   width: 100%;
   height: 100vh;
@@ -19,7 +21,6 @@ body {
   );
 }
 
-/* brilho central tipo "feixe" */
 .space::before {
   content: "";
   position: absolute;
@@ -27,8 +28,9 @@ body {
   height: 600px;
   top: 30%;
   left: 50%;
-
   
+  transform: translate(-50%, -50%); /* VOLTA ISSO */
+
   background: radial-gradient(
     circle,
     rgba(150, 80, 255, 0.4),
@@ -36,7 +38,6 @@ body {
   );
 
   filter: blur(40px);
-   
 }
 
 
