@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<<<<<<< HEAD
+
   <meta charset="UTF-8">
   <title>Fundo espacial</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
   <div class="space"></div>
@@ -15,6 +15,5 @@
 </head>
 <body>
     
->>>>>>> 365ee23a7be63a6bd555ec91b3fa2776b04307fc
 </body>
 </html>
