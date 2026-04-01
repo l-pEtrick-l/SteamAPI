@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
     <title>home</title>
 </head>
+
 <body>
+     <canvas id="particles"></canvas>
     <header class="header">
         <nav class="navbar">
-            <div class="logo">
+            <div class="logo-nav">
                 <!-- TODO logo image here -->
-                GAMEHIST 
+                GAMEHIST
             </div>
             <div class="menu">
                 <a href="#">About</a>
@@ -24,13 +28,17 @@
                 <button class="btn">Sign In</button>
                 <button class="btn primary">Sign Up</button>
             </div>
-         </nav>
+        </nav>
     </header>
 
     <section class="hero">
-        <div class="hero-logo">
-            <!-- image-->
+
+        <div class="container">
+            <img src="/imgs/Logo.png" class="logo" />
+       
         </div>
+
+    
         <div class="hero-text">
             <h1>Track Game Prices on Steam</h1>
             <p>Get the best deals by tracking the price history of your favorite games</p>
@@ -47,6 +55,7 @@
             <div class="stat"><!-- TODO price tracking --></div>
         </div>
     </section>
+
     <section class="updates">
         <h2>Recent price updates</h2>
         <div class="cards">
@@ -89,5 +98,10 @@
 
         </div>
     </section>
+  
+    <script src="js/particles.js"></script>
+
+
 </body>
+
 </html>
