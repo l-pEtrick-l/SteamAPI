@@ -48,6 +48,6 @@
   <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
-  <div class="space"></div>
+
 </body>
 </html>
