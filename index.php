@@ -1,53 +1,93 @@
 <!DOCTYPE html>
-<!--
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Fundo espacial</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="/css/index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>home</title>
 </head>
 <body>
-  <div class="space"></div>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Promoções do dia</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <!-- TODO logo image here -->
+                GAMEHIST 
+            </div>
+            <div class="menu">
+                <a href="#">About</a>
+                <a href="#">Features</a>
+                <a href="#">Games</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="auth-btn">
+                <button class="btn">Sign In</button>
+                <button class="btn primary">Sign Up</button>
+            </div>
+         </nav>
+    </header>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
---->
-</html>
+    <section class="hero">
+        <div class="hero-logo">
+            <!-- image-->
+        </div>
+        <div class="hero-text">
+            <h1>Track Game Prices on Steam</h1>
+            <p>Get the best deals by tracking the price history of your favorite games</p>
+        </div>
+        <div class="search_bar">
+            <form action="#" method="GET">
+                <input type="search" name="q" placeholder="Search for a game..." />
+                <button type="submit">🔍SEARCH</button>
+            </form>
+        </div>
+        <div class="stats">
+            <div class="stat"><!-- TODO games tracked --> +20.000 games</div>
+            <div class="stat"><!-- TODO users --></div>
+            <div class="stat"><!-- TODO price tracking --></div>
+        </div>
+    </section>
+    <section class="updates">
+        <h2>Recent price updates</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="card-image" style="background-image: url(#)">
+                    <span class="discount">53%<!--Discount porcentage--></span>
+                </div>
 
+                <div class="card-info">
+                    <h3>GAME NAME</h3>
+                    <p class="old-price">$59.99</p>
+                    <p class="new-price">$29.99</p>
+                    <p class="date"> 26 de Março</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <span class="discount"><!--Discount porcentage--></span>
+                </div>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Fundo espacial</title>
-  
-  <link rel="stylesheet" href="/css/index.css">
-</head>
-<body>
-  <div class="space"></div>
+                <div class="card-info">
+                    <h3>GAME NAME</h3>
+                    <p class="old-price">$59.99</p>
+                    <p class="new-price">$29.99</p>
+                    <p class="date"> 26 de Março</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <span class="discount"><!--Discount porcentage--></span>
+                </div>
+
+                <div class="card-info">
+                    <h3>GAME NAME</h3>
+                    <p class="old-price">$59.99</p>
+                    <p class="new-price">$29.99</p>
+                    <p class="date"> 26 de Março</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
 </body>
 </html>
