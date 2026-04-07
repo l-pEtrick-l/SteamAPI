@@ -1,17 +1,25 @@
 body{
-  background: linear-gradient(to right,#010016,#040b47, #010016);
+  background: linear-gradient(to right,#010016,#0c0343, #04013c,#010016);
   color: white;
   font-family: Arial, sans-serif;
 }
-
+#particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* joga pra trás */
+  pointer-events: none; /* não atrapalha cliques */
+}
 .divform{
     margin-top: 10px;
     background-color: rgba(227, 226, 236, 0.073);
     padding: 2%;
     justify-content: center;
     align-items: center;
-    width: 30%;
-    height: 75dvh;
+    width: 35%;
+    height: 80dvh;
     border: 1px solid rgba(255, 255, 255, 0.252);
     border-radius: 10px;
 }
@@ -20,6 +28,7 @@ body{
 }
 h1{
     text-align: center;
+    margin-top: 5%;
 }
 .btn{
     align-items: center;
@@ -28,12 +37,59 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 100dvh;
 }
 input {
   background: transparent !important;
   border: 1px solid rgba(255, 255, 255, 0.252) !important;
+  color: white !important;
 }
 .justificar{
-    margin-top: 8px;
+    margin-top: 2%;
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 0.39) !important;
+}
+.alinhartermos{
+    display: flex;
+    gap: 1dvh;
+}
+.test2{
+    background-color: brown;
+}
+p{
+    margin-top: 2dvh;
+}
+@media (max-width: 1150px)  {
+    .divform{
+        width: 42%;
+    }
+}
+@media (max-width: 1000px){
+    .divform{
+        height: 76dvh;
+    }
+}
+@media (max-width: 930px)  {
+    .divform{
+        width: 47%;
+    }
+}
+@media (max-width: 800px)  {
+    .divform{
+        width: 53%;
+     }
+}
+     @media (max-width: 600px)  {
+    .divform{
+        width: 68%;
+        padding: 3%;
+     }
+    }
+      @media (max-width: 550px)  {
+    .divform{
+        width: 75%;
+        padding: 3.5%;
+        height: 74dvh;
+     }
 }
