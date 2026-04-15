@@ -11,6 +11,20 @@
 </head>
   <body>
     <canvas id="particles"></canvas>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo-nav">
+                <!-- TODO logo image here -->
+                GAMEHIST
+            </div>
+            <div class="auth-btn">
+                <button class="btn">Sign In</button>
+                <button class="btn navbutton">Home</button>
+            </div>
+        </nav>
+    </header>
+    
     <main class="centralizar">
     
     <div class="divform">
@@ -20,21 +34,27 @@
     <hr>
 
     <form action="#" method="POST">
+    <div class="d-flex gap-2">
     <div>
     <label for="" class="form-label"><i class="bi bi-person"></i> Nome</label>
     <input type="text" class="form-control" placeholder="Nome">
+    </div>
+    <div>
+    <label for="" class="form-label"><i class="bi bi-person"></i> Nick</label>
+    <input type="text" class="form-control" placeholder="Nick">
+    </div>
     </div>
     <div class="justificar">
     <label for="" class="form-label"><i class="bi bi-envelope"></i> E-mail</label>
     <input type="text" class="form-control" placeholder="E-mail">
     </div>
     <div class="justificar">
-     <label for="" class="form-label"><i class="bi bi-lock"></i> Senha</label>
-    <input type="password" class="form-control" placeholder="Senha">
+    <label for="" class="form-label"><i class="bi bi-telephone"></i> Telefone</label>
+    <input type="text" class="form-control" placeholder="Telefone">
     </div>
     <div class="justificar">
-    <label for="" class="form-label"><i class="bi bi-lock"></i> Confirma senha</label>
-    <input type="password" class="form-control" placeholder="Confirma senha">
+     <label for="" class="form-label"><i class="bi bi-calendar"></i> Data de nascimento</label>
+    <input type="date" class="form-control" placeholder="Senha" class="input-date">
     </div>
     <div class="justificar alinhartermos">
       <input type="checkbox"><p>Aceitar os termos de uso</p>
