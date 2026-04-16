@@ -13,6 +13,7 @@
 
 <body>
      <canvas id="particles"></canvas>
+     
     <header class="header">
         <nav class="navbar">
             <div class="logo-nav">
@@ -20,40 +21,32 @@
                 GAMEHIST
             </div>
             <div class="menu">
-                <a href="#">About</a>
-                <a href="#">Features</a>
+                <a href="PHP/cadastro.html">Meu jogos</a>
+                <a href="PHP/favoritos.html">Favoritos</a>
                 <a href="#">Games</a>
                 <a href="#">Contact</a>
             </div>
             <div class="auth-btn">
-                <button class="btn">Sign In</button>
-                <button class="btn primary">Sign Up</button>
+                <button onclick="window.location.href='PHP/login.html'" class="btn">Sign In</button>
+                <button onclick="window.location.href='PHP/cadastro.html'" class="btn primary">Sign Up</button>
             </div>
         </nav>
     </header>
 
     <section class="hero">
-
+           <div class="hero-text">
+            <h2>Acompanhe seus jogos favoritos da Steam.</h2>
+            <p>Encontre as melhores ofertas acompanhando o histórico de preços dos seus jogos favoritos.</p>
+        </div>
+             <div class="search-bar">
+            <form action="#" method="GET">
+                <input type="search" name="q" placeholder="Procure sua proxima historia">
+                <button type="submit">🔍Pesquisar</button>
+            </form>
+        </div>
         <div class="container">
             <img src="/imgs/Logo.png" class="logo" />
        
-        </div>
-
-    
-        <div class="hero-text">
-            <h1>Track Game Prices on Steam</h1>
-            <p>Get the best deals by tracking the price history of your favorite games</p>
-        </div>
-        <div class="search-bar">
-            <form action="#" method="GET">
-                <input type="search" name="q" placeholder="Search for a game..." />
-                <button type="submit">🔍SEARCH</button>
-            </form>
-        </div>
-        <div class="stats">
-            <div class="stat"><!-- TODO games tracked --> +20.000 games</div>
-            <div class="stat"><!-- TODO users --></div>
-            <div class="stat"><!-- TODO price tracking --></div>
         </div>
     </section>
 

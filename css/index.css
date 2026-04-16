@@ -210,10 +210,10 @@ body {
 }
 
 .logo {
-  height: 60vh;
+
   z-index: 2;
   position: relative;
-  
+transform: translateY(-200px);
   width: 50vw;
   max-width: 80%;
   height: auto;
