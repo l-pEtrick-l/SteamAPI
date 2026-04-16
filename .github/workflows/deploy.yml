@@ -13,6 +13,27 @@ jobs:
       - name: Baixar código
         uses: actions/checkout@v3
 
+      - name: Criar arquivo de conexão
+        run: |
+          mkdir -p config
+          cat <<EOF > config/conect.php
+          <?php
+          \$host = "${{ secrets.DB_HOST }}";
+          \$usuario = "${{ secrets.DB_USER }}";
+          \$senha = "${{ secrets.DB_PASS }}";
+          \$banco = "${{ secrets.DB_NAME }}";
+
+          \$conexao = new mysqli(\$host, \$usuario, \$senha, \$banco);
+          \$conexao->set_charset("utf8");
+
+          if (\$conexao->connect_error) {
+              echo "erro de conexao";
+          }
+
+          return \$conexao;
+          ?>
+          EOF
+
       - name: Enviar via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
@@ -20,5 +41,3 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASS }}
           server-dir: ${{ secrets.FTP_PATH }}
-
-
