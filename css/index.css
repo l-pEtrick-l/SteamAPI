@@ -49,6 +49,11 @@ body {
   text-align: center;
   padding: 80px 0;
 }
+.hero-text{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
 .hero-text h1 {
   font-size: 2.5rem;
@@ -69,7 +74,7 @@ body {
 
 .search-bar input {
   width: 300px;
-  padding: 12px;
+  padding: 14px;
   border-radius: 25px 0 0 25px;
   border: none;
   outline: none;
@@ -195,17 +200,14 @@ body {
     opacity: 0.85;
 }
 
-
-
-
 .container {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-    min-height: 100vh; /* melhor que height */
+  min-height: 80vh;
   padding-top: 80px;
 }
 
@@ -213,14 +215,13 @@ body {
 
   z-index: 2;
   position: relative;
-transform: translateY(-200px);
-  width: 50vw;
+  transform: translateY(-200px);
+  width: 50vw; 
+  width: clamp(50vw, 55vw, 100vw); 
   max-width: 80%;
   height: auto;
   margin: 0 auto;
   display: block;
-
-
   filter: drop-shadow(0 0 20px #00ccff)
           drop-shadow(0 0 40px #00ccff);
 }
@@ -236,17 +237,97 @@ transform: translateY(-200px);
   pointer-events: none; /* não atrapalha cliques */
 }
 
-@media (max-width: 768px) {
+.logo{
+  margin-top: 0;
+}
+@media (max-width: 1150px) {
+  .logo{
+    width: clamp(60vw, 70vw, 100vw); 
+  }
+  .divlogo{
+    margin-top: 0;
+  }
+
+  
+}
+
+@media (max-width: 900px) {
   .hero-text h1 {
     font-size: 1.5rem;
   }
-
-  .logo {
-    width: 200px;
+  .logo{
+    width: clamp(70vw, 85vw, 100vw); 
   }
 
   .stats {
     flex-direction: column;
     gap: 20px;
   }
+}
+@media (max-width: 650px) {
+  .logo{
+  width: 80%;
+  }
+  p{
+    font-size: 14px;
+  }
+  h2{
+    font-size: 20px;
+  }
+    .container{
+    padding-top: 50px;
+  }
+  
+}
+@media (max-width: 520px) {
+  .logo{
+  width: 600px;
+  }
+  p{
+    font-size: 11px;
+  }
+  h2{
+    font-size: 15px;
+  }
+  .search-bar input {
+    width: 230px;
+    height: 40px;
+    padding: 12px;
+  }
+  .search-bar button{
+    height: 40px;
+    padding: 10px 23px;
+
+  }
+    .container{
+    padding-top: 40px;
+  }
+
+  
+}
+@media (max-width: 415px) {
+  .logo{
+  width: 120dvh;
+  }
+  p{
+    font-size: 9px;
+  }
+  h2{
+    font-size: 13px;
+  }
+  .search-bar input {
+    width: 190px;
+    height: 37px;
+    padding: 8px;
+  }
+  .search-bar button{
+    height: 37px;
+    padding: 6px 20px;
+
+  }
+    .container{
+    padding-top: 20px;
+  }
+  
+  
 }
