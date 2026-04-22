@@ -47,7 +47,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 30%;
-    height: 76dvh;
+    height: auto;
     border-radius: 10px;
      box-shadow: 
     0 10px 30px rgba(0, 0, 0, 0.5),
@@ -56,6 +56,9 @@ body{
 .btn{
     margin-top: 2%;
     color: white;
+}
+.margemicon{
+    padding: 1%;
 }
 .btn:hover {
    transform: scale(1.08);
@@ -100,7 +103,7 @@ p{
 }
 @media (max-width: 1000px){
     .divform{
-        height: 76dvh;
+        height: auto;
     }
 }
 @media (max-width: 930px)  {
@@ -123,6 +126,6 @@ p{
     .divform{
         width: 75%;
         padding: 3.5%;
-        height: 74dvh;
+        height: auto;
      }
 }
