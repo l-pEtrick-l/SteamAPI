@@ -1,7 +1,6 @@
 <?php
 session_start();
 $mysqli = include __DIR__ . '/../config/conectar.php';
-$mysqli->report_mode = MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT;
 header('Content-Type: application/json; charset=UTF-8');
 
 
@@ -27,7 +26,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
  }
 
  echo json_encode(['ok' => true, 'message' => 'Cadastro realizado com sucesso!']);
-//<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
 
 ?>
