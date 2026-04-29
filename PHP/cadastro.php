@@ -1,6 +1,6 @@
 <?php
 session_start();
-$mysqli = include __DIR__ . '/../config/conectar.php';
+$mysqli = include __DIR__ . '/../config/conect.php';
 header('Content-Type: application/json; charset=UTF-8');
 
 
@@ -11,6 +11,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $telefone=$_POST["telefone"] ?? null;
     $senha=$_POST["senha"] ?? null;
     $checkbox=$_POST["checkbox"] ?? null;
+    $data_nascimento = $_POST["data_nascimento"] ?? null;
     $data_de_cadastro = date("Y-m-d h:i:s");
 
     if(isset($checkbox)){
