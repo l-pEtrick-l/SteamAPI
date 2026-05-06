@@ -9,7 +9,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $nick=$_POST["nick"] ?? 'nick';
     $email=$_POST["email"] ?? null;
     $telefone=$_POST["telefone"] ?? null;
-    $senha=$_POST["senha"] ?? null;
+    $senha="teste";
     $checkbox=$_POST["checkbox"] ?? null;
     $data_nascimento = $_POST["data_nascimento"] ?? null;
     $data_de_cadastro = date("Y-m-d h:i:s");
