@@ -235,3 +235,29 @@ p{
         height: auto;
      }
 }
+
+          .termos {
+            font-size: 14px;
+            line-height: 1.6;
+            max-height: 80vh;
+            overflow-y: auto;
+            padding-right: 10px;
+          }
+
+          .termos h6 {
+            margin-top: 20px;
+            font-weight: 600;
+          }
+
+          .termos p {
+            color: #444;
+          }
+
+          .termos ul {
+            padding-left: 20px;
+          }
+
+          .termos hr {
+            margin: 5px 0 10px;
+            opacity: 0.2;
+          }

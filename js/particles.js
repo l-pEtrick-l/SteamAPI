@@ -19,6 +19,7 @@ function drawParticles() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   ctx.fillStyle = "#00ccff";
+  
 
   particles.forEach(p => {
     ctx.beginPath();
