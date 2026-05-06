@@ -7,14 +7,14 @@ header('Content-Type: application/json; charset=UTF-8');
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     $nome=$_POST["nome"] ?? 'name';
     $nick=$_POST["nick"] ?? 'nick';
-    $email=$_POST["email"] ?? null;
-    $telefone=$_POST["telefone"] ?? null;
+    $email=$_POST["email"] ?? '';
+    $telefone=$_POST["telefone"] ?? '';
     $senha="teste";
-    $checkbox=$_POST["checkbox"] ?? null;
-    $data_nascimento = $_POST["data_nascimento"] ?? null;
+    $checkbox=$_POST["checkbox"] ?? '';
+    $data_nascimento = $_POST["data_nascimento"] ?? '';
     $data_de_cadastro = date("Y-m-d h:i:s");
 
-    if(isset($checkbox)){
+    if(!empty($checkbox)){
         $senha_crip = password_hash($senha, PASSWORD_BCRYPT);
         $sql = $mysqli->prepare("INSERT INTO user(nome, nick, telefone, email_usuario, data_nascimento, senha, data_de_cadastro)
         VALUES (?,?,?,?,?,?,?)");
