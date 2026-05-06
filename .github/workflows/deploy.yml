@@ -1,4 +1,4 @@
-name: Deploy via FTP
+name: Deploy to InfinityFree
 
 on:
   push:
@@ -8,36 +8,16 @@ on:
 jobs:
   ftp-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Baixar código
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Criar arquivo de conexão
-        run: |
-          mkdir -p config
-          cat <<EOF > config/conect.php
-          <?php
-          \$host = "${{ secrets.DB_HOST }}";
-          \$usuario = "${{ secrets.DB_USER }}";
-          \$senha = "${{ secrets.DB_PASS }}";
-          \$banco = "${{ secrets.DB_NAME }}";
-
-          \$conexao = new mysqli(\$host, \$usuario, \$senha, \$banco);
-          \$conexao->set_charset("utf8");
-
-          if (\$conexao->connect_error) {
-              echo "erro de conexao";
-          }
-
-          return \$conexao;
-          ?>
-          EOF
-
-      - name: Enviar via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASS }}
+          local-dir: ./  # envia todos os arquivos do repositório, incluindo 'vendor'
           server-dir: ${{ secrets.FTP_PATH }}
+       #php version: 8.3.19                                                                                           
