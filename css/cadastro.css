@@ -1,8 +1,9 @@
-body{
-  background: linear-gradient(to right,#010016,#0c0343, #04013c,#010016);
-  color: white;
-  font-family: Arial, sans-serif;
+body {
+    background: linear-gradient(to right, #010016, #0c0343, #04013c, #010016);
+    color: white;
+    font-family: Arial, sans-serif;
 }
+
 .navbar {
     opacity: 0.7;
     display: flex;
@@ -30,15 +31,18 @@ body{
 }
 
 #particles {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1; /* joga pra trás */
-  pointer-events: none; /* não atrapalha cliques */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* joga pra trás */
+    pointer-events: none;
+    /* não atrapalha cliques */
 }
-.divform{
+
+.divform {
     margin-top: 10px;
     background: rgba(17, 24, 39, 0.6);
     backdrop-filter: blur(12px);
@@ -49,53 +53,63 @@ body{
     width: 30%;
     height: auto;
     border-radius: 10px;
-     box-shadow: 
-    0 10px 30px rgba(0, 0, 0, 0.5),
-    0 0 20px rgba(94, 203, 255, 0.1);
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.5),
+        0 0 20px rgba(94, 203, 255, 0.1);
 }
-.btn{
+
+.btn {
     margin-top: 2%;
     color: white;
 }
 
-.margemicon{
+.margemicon {
     padding: 1%;
 }
+
 .btn:hover {
-   transform: scale(1.08);
+    transform: scale(1.08);
 }
-h1{
+
+h1 {
     text-align: center;
 }
-.btn{
+
+.btn {
     align-items: center;
 }
-.centralizar{
+
+.centralizar {
     height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 1%;
 }
+
 input {
-  background: transparent !important;
-  border: 1px solid rgba(255, 255, 255, 0.252) !important;
-  color: white !important;
+    background: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.252) !important;
+    color: white !important;
 }
-.justificar{
+
+.justificar {
     margin-top: 2%;
 }
+
 input::placeholder {
-  color: rgba(255, 255, 255, 0.39) !important;
+    color: rgba(255, 255, 255, 0.39) !important;
 }
-.alinhartermos{
+
+.alinhartermos {
     display: flex;
     gap: 1dvh;
 }
 
-p{
+p {
     margin-top: 2dvh;
 }
+
 .navbar {
     position: fixed;
     top: 0;
@@ -109,7 +123,7 @@ p{
     background: rgba(13, 27, 42, 0.6);
     backdrop-filter: blur(10px);
 
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     z-index: 10;
 }
 
@@ -132,7 +146,7 @@ p{
 
 
 .menu a {
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     font-size: 14px;
     transition: 0.2s;
@@ -141,6 +155,7 @@ p{
 .menu a:hover {
     color: #5ecbff;
 }
+
 .menu-toggle {
     display: none;
     font-size: 22px;
@@ -149,9 +164,10 @@ p{
     color: white;
     cursor: pointer;
     width: auto;
-    padding: 4px 8px; 
+    padding: 4px 8px;
     justify-self: end;
 }
+
 .menu {
     justify-self: center;
     display: flex;
@@ -159,26 +175,30 @@ p{
     gap: 20px;
 }
 
-@media (max-width: 1200px)  {
-    .divform{
+@media (max-width: 1200px) {
+    .divform {
         width: 42%;
     }
 }
-@media (max-width: 1000px){
-    .divform{
+
+@media (max-width: 1000px) {
+    .divform {
         height: auto;
     }
 }
-@media (max-width: 930px)  {
-    .divform{
+
+@media (max-width: 930px) {
+    .divform {
         width: 47%;
     }
 }
-@media (max-width: 800px)  {
-    .divform{
+
+@media (max-width: 800px) {
+    .divform {
         width: 53%;
-     }
+    }
 }
+
 @media (max-width: 768px) {
     .navbar {
         padding: 15px 20px;
@@ -199,16 +219,19 @@ p{
         gap: 15px;
         padding: 15px 0;
         border-radius: 12px;
-        border: 1px solid rgba(255,255,255,0.08);
+        border: 1px solid rgba(255, 255, 255, 0.08);
         display: none;
     }
-    .navbar{
+
+    .navbar {
         opacity: none;
         background-color: #04013c;
     }
+
     .menu a {
-    color: rgba(255,255,255);
+        color: rgba(255, 255, 255);
     }
+
     .menu.active {
         display: flex;
     }
@@ -222,42 +245,43 @@ p{
     }
 }
 
-     @media (max-width: 600px)  {
-    .divform{
+@media (max-width: 600px) {
+    .divform {
         width: 68%;
         padding: 3%;
-     }
     }
-      @media (max-width: 550px)  {
-    .divform{
+}
+
+@media (max-width: 550px) {
+    .divform {
         width: 75%;
         padding: 3.5%;
         height: auto;
-     }
+    }
 }
 
-          .termos {
-            font-size: 14px;
-            line-height: 1.6;
-            max-height: 80vh;
-            overflow-y: auto;
-            padding-right: 10px;
-          }
+.termos {
+    font-size: 14px;
+    line-height: 1.6;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding-right: 10px;
+}
 
-          .termos h6 {
-            margin-top: 20px;
-            font-weight: 600;
-          }
+.termos h6 {
+    margin-top: 20px;
+    font-weight: 600;
+}
 
-          .termos p {
-            color: #444;
-          }
+.termos p {
+    color: #444;
+}
 
-          .termos ul {
-            padding-left: 20px;
-          }
+.termos ul {
+    padding-left: 20px;
+}
 
-          .termos hr {
-            margin: 5px 0 10px;
-            opacity: 0.2;
-          }
+.termos hr {
+    margin: 5px 0 10px;
+    opacity: 0.2;
+}
