@@ -1,6 +1,6 @@
 <?php
 session_start();
-$mysqli = include __DIR__ . '/../config/conectar.php';
+$mysqli = include __DIR__ . '/../config/conect.php';
 header('Content-Type: application/json; charset=UTF-8');
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
