@@ -29,7 +29,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $_SESSION['email'] = $email;
         $_SESSION['nome'] = $user['nome'];
         $_SESSION['nick'] = $user['nick'];
-        header('Location: /../HTML/meus-jogos');
+        echo json_encode(['ok' => 'true', 'message' => 'Login realizado com sucesso!']);
         exit;
     }else{
         sleep(1);
