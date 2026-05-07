@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +23,7 @@
     </nav>
 
     <div class="container">
-        <form class="login" method="POST" action="../PHP/login.php">
+        <form class="login" id="submit_form" method="POST" action="../PHP/login.php">
             <h2>GameHist</h2>
 
             <div class="input-group">
@@ -34,10 +34,6 @@
                 <input type="password" name="senha" placeholder="Senha" required>
             </div>
 
-            <div class="checkbox">
-                <input type="checkbox" name="lembrar">
-                <label>Lembrar-me</label>
-            </div>
 
             <button class="btn-login" type="submit">Entrar</button>
 
@@ -48,5 +44,7 @@
     </div>
 <script src="/js/particles.js"></script>
 <script src="/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../js/sweetalert.js"></script>
 </body>
 </html>
