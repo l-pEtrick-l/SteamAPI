@@ -24,7 +24,7 @@
             text: message,
             timer: 2000,
             showConfirmButton: false
-          }).then(() => window.location.href='index-logado.html');
+          }).then(() => window.location.href='meus-jogos.html');
         })
         .catch(err => {
           Swal.fire({
