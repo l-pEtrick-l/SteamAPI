@@ -31,6 +31,6 @@
             icon: "error",
             title: "Oops...",
             text: err.message
-          }) .then(() => window.location.href='../index.html');
+          })
         });
     });
